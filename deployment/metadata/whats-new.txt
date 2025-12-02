@@ -1,0 +1,9 @@
+Initial release of MBM - Mini Business Manager!
+
+- Track daily revenue, expenses, and hours
+- See your real hourly rate instantly
+- Calendar view with profit/loss day coloring
+- Customer management with call, text, and maps integration
+- Job scheduling and tracking
+- iCloud sync across all your devices
+- Daily reminder notifications

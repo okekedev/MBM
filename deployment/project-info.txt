@@ -1,0 +1,14 @@
+App Name: MBM - Mini Business Manager
+Bundle ID: com.christianokeke.SBM
+Version: 1.0.0
+Category: Business
+Subcategory: Productivity
+
+Pricing: Free
+
+Age Rating: 4+
+
+Privacy Policy: https://okekedev.github.io/MBM/privacy
+Support URL: https://okekedev.github.io/MBM/support
+
+Copyright: 2024 Christian Okeke
