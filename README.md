@@ -1,6 +1,6 @@
 # MBM - Mini Business Manager
 
-![MBM Logo](./logo.png)
+<img src="./logo.png" width="128" alt="MBM Logo" />
 
 ## Overview
 
@@ -17,18 +17,16 @@ MBM (Mini Business Manager) is a comprehensive iOS business management app desig
 
 ## Screenshots
 
-### Track Your Hourly Rate
-![Track Your Hourly Rate](./deployment/screenshots/mbmpromo.png)
-
-### Syncs Across Your Devices
-![Syncs Across Your Devices](./deployment/screenshots/mbmpromo1.png)
-
-### Additional Features
-![Feature 2](./deployment/screenshots/mbmpromo2.png)
-![Feature 3](./deployment/screenshots/mbmpromo3.png)
-![Feature 4](./deployment/screenshots/mbmpromo4.png)
-![Feature 5](./deployment/screenshots/mbmpromo5.png)
-
+<p align="center">
+  <img src="./deployment/screenshots/mbmpromo.png" width="30%" />
+  <img src="./deployment/screenshots/mbmpromo1.png" width="30%" />
+  <img src="./deployment/screenshots/mbmpromo2.png" width="30%" />
+</p>
+<p align="center">
+  <img src="./deployment/screenshots/mbmpromo3.png" width="30%" />
+  <img src="./deployment/screenshots/mbmpromo4.png" width="30%" />
+  <img src="./deployment/screenshots/mbmpromo5.png" width="30%" />
+</p>
 ## Technology
 
 - Built with Swift and SwiftUI
