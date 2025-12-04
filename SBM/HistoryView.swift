@@ -79,6 +79,7 @@ struct HistoryView: View {
                 EditEntrySheet(entry: entry)
             }
         }
+        .navigationViewStyle(.stack)
     }
 
     // MARK: - Hero Summary Card
@@ -461,6 +462,7 @@ struct EditEntrySheet: View {
                 }
             }
         }
+        .navigationViewStyle(.stack)
         .onAppear {
             loadData()
         }

@@ -126,6 +126,7 @@ struct TodayView: View {
                 }
             }
         }
+        .navigationViewStyle(.stack)
     }
 
     // MARK: - Date Navigation Header

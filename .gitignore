@@ -38,5 +38,8 @@ Carthage/Build/
 *.swo
 *~
 
-# API Keys
+# API Keys & Credentials
 .env
+scripts/.env
+*.p8
+AuthKey_*.p8

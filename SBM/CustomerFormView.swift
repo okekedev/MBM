@@ -65,6 +65,7 @@ struct CustomerFormView: View {
                 loadData()
             }
         }
+        .navigationViewStyle(.stack)
     }
 
     private func loadData() {

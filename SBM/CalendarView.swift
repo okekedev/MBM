@@ -54,6 +54,7 @@ struct CalendarView: View {
                 AddJobSheet(selectedDate: selectedDate, customers: Array(customers))
             }
         }
+        .navigationViewStyle(.stack)
     }
 
     // MARK: - Month Navigation
@@ -525,6 +526,7 @@ struct AddJobSheet: View {
                 mode = .newCustomer
             }
         }
+        .navigationViewStyle(.stack)
     }
 
     // MARK: - Mode Picker

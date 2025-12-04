@@ -50,6 +50,7 @@ struct SettingsView: View {
         .onAppear {
             checkNotificationStatus()
         }
+        .navigationViewStyle(.stack)
     }
 
     // MARK: - Notifications Section

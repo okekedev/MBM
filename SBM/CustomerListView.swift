@@ -608,6 +608,7 @@ struct ScheduleJobSheet: View {
                 }
             }
         }
+        .navigationViewStyle(.stack)
     }
 }
 

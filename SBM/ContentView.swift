@@ -35,6 +35,7 @@ struct ContentView: View {
                 }
                 .tag(4)
         }
+        .tabViewStyle(.tabBarOnly)
         .tint(AppTheme.purple)
         .preferredColorScheme(.light)
     }

@@ -3,6 +3,8 @@ import SwiftData
 
 @main
 struct MBMApp: App {
+    @StateObject private var subscriptionManager = SubscriptionManager.shared
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             DailyEntry.self,
@@ -24,8 +26,33 @@ struct MBMApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(subscriptionManager)
         }
         .modelContainer(sharedModelContainer)
+    }
+}
+
+// MARK: - Root View (Subscription Gate)
+struct RootView: View {
+    @EnvironmentObject var subscriptionManager: SubscriptionManager
+
+    var body: some View {
+        Group {
+            if subscriptionManager.isLoading && subscriptionManager.subscriptionStatus == .unknown {
+                // Loading state
+                ZStack {
+                    AppTheme.background.ignoresSafeArea()
+                    ProgressView()
+                        .scaleEffect(1.5)
+                }
+            } else if subscriptionManager.isSubscribed {
+                // User is subscribed - show main app
+                ContentView()
+            } else {
+                // Not subscribed - show paywall
+                PaywallView()
+            }
+        }
     }
 }
